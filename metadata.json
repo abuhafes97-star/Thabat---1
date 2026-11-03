@@ -1,0 +1,6 @@
+{
+  "name": "ثبات",
+  "description": "تطبيق متكامل لمتابعة حفظ القرآن الكريم ومراجعته المتباعدة ودورة المحفوظ القديم حتى رمضان ١٤٤٨هـ",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
