@@ -6,6 +6,7 @@
 import React from 'react';
 import { BookOpen, Calendar, AlertCircle, Sparkles } from 'lucide-react';
 import { getHijriDisplay } from '../lib/hifzCore';
+import { PWAInstallButton } from './PWAInstallButton';
 
 export type TabKey = 'today' | 'plan' | 'review' | 'progress' | 'more';
 
@@ -54,6 +55,8 @@ export const Navbar: React.FC<NavbarProps> = ({
           <div className="text-[#dfc882] text-[11px] font-medium hidden md:block">
             رمضان ١٤٤٨ المتوقع: ٨ فبراير ٢٠٢٧ م (تقويمي)
           </div>
+
+          <PWAInstallButton />
 
           <button
             onClick={onToggleDemo}

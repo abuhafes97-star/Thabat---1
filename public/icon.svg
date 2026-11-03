@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#12372A" />
+      <stop offset="100%" stop-color="#0B221A" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E5C158" />
+      <stop offset="50%" stop-color="#C59B27" />
+      <stop offset="100%" stop-color="#9A7718" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000" flood-opacity="0.35" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded squircle with padding -->
+  <rect width="512" height="512" rx="128" fill="url(#bgGrad)" />
+
+  <!-- Subtle ornamental border inside -->
+  <rect x="28" y="28" width="456" height="456" rx="108" fill="none" stroke="url(#goldGrad)" stroke-width="4" stroke-opacity="0.4" />
+
+  <!-- Star / Crescent ornament -->
+  <circle cx="256" cy="110" r="14" fill="url(#goldGrad)" opacity="0.9" />
+  <circle cx="256" cy="110" r="10" fill="#12372A" />
+  <circle cx="258" cy="108" r="4" fill="url(#goldGrad)" />
+
+  <!-- Elegant Arabic Letter 'ث' for 'ثبات' -->
+  <g filter="url(#shadow)">
+    <!-- Main base curve of 'ث' -->
+    <path d="M140 270 C140 370, 372 370, 372 270 C372 254, 350 254, 350 270 C350 334, 162 334, 162 270 C162 254, 140 254, 140 270 Z" fill="url(#goldGrad)" />
+
+    <!-- Three dots of 'ث' arranged as a triangle -->
+    <!-- Top dot -->
+    <circle cx="256" cy="180" r="16" fill="url(#goldGrad)" />
+    <!-- Bottom right dot -->
+    <circle cx="226" cy="225" r="16" fill="url(#goldGrad)" />
+    <!-- Bottom left dot -->
+    <circle cx="286" cy="225" r="16" fill="url(#goldGrad)" />
+  </g>
+
+  <!-- Title 'ثَبَات' in Arabic Calligraphy font -->
+  <text x="256" y="420" text-anchor="middle" font-family="'Amiri', 'Cairo', serif" font-weight="bold" font-size="44" fill="#FBF9F4" letter-spacing="4">
+    ثَبَـات
+  </text>
+  <text x="256" y="455" text-anchor="middle" font-family="'Cairo', sans-serif" font-weight="600" font-size="16" fill="#C59B27" letter-spacing="6">
+    THABAT
+  </text>
+</svg>

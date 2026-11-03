@@ -24,6 +24,7 @@ import {
 } from 'lucide-react';
 import { validateSeed } from '../lib/hifzCore';
 import { exportBackupJSON, importBackupJSON } from '../lib/storage';
+import { PWAInstallButton } from './PWAInstallButton';
 
 interface MoreTabProps {
   seed: QuranPlanSeed;
@@ -377,6 +378,9 @@ export const MoreTab: React.FC<MoreTabProps> = ({
             <SettingsIcon className="w-5 h-5 text-[#C59B27]" />
             <h2 className="font-serif text-base font-bold text-[#12372A]">إعدادات الخطة والتسميع</h2>
           </div>
+
+          {/* Mobile Home Screen PWA Install Banner */}
+          <PWAInstallButton variant="full" />
 
           <form onSubmit={handleSaveSettings} className="space-y-4">
             <div>
